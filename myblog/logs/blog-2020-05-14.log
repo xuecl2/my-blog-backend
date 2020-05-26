@@ -1,0 +1,561 @@
+09:53:04.157 INFO  x.myblog.controller.BaseController - {"title":"开发要点","keyWord":"lesson-learnt development-tips","digest":"远程银行开发时总结的一些开发要点","user":"xuecl","operation":"save"}
+09:53:04.218 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"开发要点","keyWord":"lesson-learnt development-tips","digest":"远程银行开发时总结的一些开发要点","user":"xuecl","operation":"save"}
+09:53:04.234 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+09:53:04.515 INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+09:53:04.521 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+09:53:04.965 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":59}
+09:53:04.968 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":59}
+09:53:04.977 ERROR x.myblog.controller.BaseController - null
+09:53:04.978 ERROR x.myblog.controller.BaseController - xuecl.myblog.controller.BaseController.queryImgsById(BaseController.java:291)
+xuecl.myblog.controller.BaseController.baseController(BaseController.java:95)
+sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+java.lang.reflect.Method.invoke(Unknown Source)
+org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:879)
+org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793)
+org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+xuecl.myblog.filter.AddAllowOriginHttpHeaderFilter.doFilter(AddAllowOriginHttpHeaderFilter.java:29)
+org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)
+org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373)
+org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594)
+org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+java.lang.Thread.run(Unknown Source)
+
+09:55:43.922 INFO  xuecl.myblog.MyblogApplication - Starting MyblogApplication on DESKTOP-O9S7IM3 with PID 928 (D:\Software\java-2019-062\workspace\myblog\target\classes started by xuecl in D:\Software\java-2019-062\workspace\myblog)
+09:55:43.926 INFO  xuecl.myblog.MyblogApplication - No active profile set, falling back to default profiles: default
+09:55:46.318 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+09:55:46.343 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+09:55:46.346 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+09:55:46.346 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+09:55:46.527 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+09:55:46.527 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2491 ms
+09:55:46.978 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+09:55:47.112 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+09:55:47.306 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+09:55:47.353 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+09:55:47.359 INFO  xuecl.myblog.MyblogApplication - Started MyblogApplication in 4.212 seconds (JVM running for 5.083)
+09:55:47.572 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+09:55:47.572 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+09:55:47.585 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+09:55:47.673 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+09:55:47.759 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+09:55:47.759 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+09:55:47.769 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+09:55:48.255 INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+09:55:48.260 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+09:55:51.442 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":59}
+09:55:51.445 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":59}
+09:58:40.744 INFO  x.myblog.controller.BaseController - {"id":59,"title":"开发要点","keyWord":"lesson-learnt development-tips","content":"### 新增界面的表单元素时\n1. 确定新增元素的校验规则\n\n### 删除界面的表单元素时\n1. 去除之前元素的相关校验代码\n2. 确保历史数据不会在改动后的代码里头报错","digest":"远程银行开发时总结的一些开发要点","user":"xuecl","operation":"save"}
+09:58:40.746 INFO  x.myblog.controller.BaseController - 输入参数 {"id":59,"title":"开发要点","keyWord":"lesson-learnt development-tips","content":"### 新增界面的表单元素时\n1. 确定新增元素的校验规则\n\n### 删除界面的表单元素时\n1. 去除之前元素的相关校验代码\n2. 确保历史数据不会在改动后的代码里头报错","digest":"远程银行开发时总结的一些开发要点","user":"xuecl","operation":"save"}
+10:01:00.622 INFO  x.myblog.controller.BaseController - {"id":59,"title":"开发要点","keyWord":"lesson-learnt development-tips","content":"## 前端部分\n#### 新增界面的表单元素时\n1. 确定新增元素的校验规则\n#### 删除界面的表单元素时\n1. 去除之前元素的相关校验代码\n2. 确保历史数据不会在改动后的代码里头报错\n\n## 后端部分\n#### 向数据库新增记录时\n1. 通常要先查询是否已含有相同主键的记录再添加","digest":"远程银行开发时总结的一些开发要点","user":"xuecl","operation":"save"}
+10:01:00.623 INFO  x.myblog.controller.BaseController - 输入参数 {"id":59,"title":"开发要点","keyWord":"lesson-learnt development-tips","content":"## 前端部分\n#### 新增界面的表单元素时\n1. 确定新增元素的校验规则\n#### 删除界面的表单元素时\n1. 去除之前元素的相关校验代码\n2. 确保历史数据不会在改动后的代码里头报错\n\n## 后端部分\n#### 向数据库新增记录时\n1. 通常要先查询是否已含有相同主键的记录再添加","digest":"远程银行开发时总结的一些开发要点","user":"xuecl","operation":"save"}
+13:33:57.036 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h33m38s585ms553µs46ns).
+13:35:50.099 INFO  x.myblog.controller.BaseController - {"id":59,"title":"开发要点","keyWord":"lesson-learnt development-tips","content":"## 前端部分\n#### 新增界面的表单元素时\n1. 确定新增元素的校验规则\n#### 删除界面的表单元素时\n1. 去除之前元素的相关校验代码\n2. 确保历史数据不会在改动后的代码里头报错\n\n## 后端部分\n#### 向数据库新增记录时\n1. 通常要先查询是否已含有同名的记录再添加","digest":"远程银行开发时总结的一些开发要点","user":"xuecl","operation":"save"}
+13:35:50.106 INFO  x.myblog.controller.BaseController - 输入参数 {"id":59,"title":"开发要点","keyWord":"lesson-learnt development-tips","content":"## 前端部分\n#### 新增界面的表单元素时\n1. 确定新增元素的校验规则\n#### 删除界面的表单元素时\n1. 去除之前元素的相关校验代码\n2. 确保历史数据不会在改动后的代码里头报错\n\n## 后端部分\n#### 向数据库新增记录时\n1. 通常要先查询是否已含有同名的记录再添加","digest":"远程银行开发时总结的一些开发要点","user":"xuecl","operation":"save"}
+18:47:49.976 INFO  x.myblog.controller.BaseController - {"id":59,"title":"开发要点","keyWord":"lesson-learnt development-tips","content":"## 前端部分\n#### 新增界面的表单元素时\n1. 确定新增元素的校验规则\n#### 删除界面的表单元素时\n1. 去除之前元素的相关校验代码\n2. 确保历史数据不会在改动后的代码里头报错\n\n## 后端部分\n#### 向数据库新增记录时\n1. 通常要先查询是否已含有同名的记录再添加","digest":"远程银行开发时总结的一些开发要点","user":"xuecl","operation":"save"}
+18:47:49.983 INFO  x.myblog.controller.BaseController - 输入参数 {"id":59,"title":"开发要点","keyWord":"lesson-learnt development-tips","content":"## 前端部分\n#### 新增界面的表单元素时\n1. 确定新增元素的校验规则\n#### 删除界面的表单元素时\n1. 去除之前元素的相关校验代码\n2. 确保历史数据不会在改动后的代码里头报错\n\n## 后端部分\n#### 向数据库新增记录时\n1. 通常要先查询是否已含有同名的记录再添加","digest":"远程银行开发时总结的一些开发要点","user":"xuecl","operation":"save"}
+18:48:07.420 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+18:48:07.421 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+18:48:07.422 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+18:48:10.119 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+18:48:10.121 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+18:49:53.555 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+18:49:53.556 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+18:49:53.556 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+18:49:56.120 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+18:49:56.121 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+19:06:39.335 DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+19:06:39.536 INFO  xuecl.myblog.MyblogApplication - Starting MyblogApplication on DESKTOP-O9S7IM3 with PID 13796 (D:\Software\java-2019-062\workspace\myblog\target\classes started by xuecl in D:\Software\java-2019-062\workspace\myblog)
+19:06:39.538 INFO  xuecl.myblog.MyblogApplication - No active profile set, falling back to default profiles: default
+19:06:41.627 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+19:06:41.642 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+19:06:41.643 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+19:06:41.643 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+19:06:41.784 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+19:06:41.784 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2149 ms
+19:06:42.509 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+19:06:42.642 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+19:06:42.845 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+19:06:42.891 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+19:06:42.895 INFO  xuecl.myblog.MyblogApplication - Started MyblogApplication in 4.117 seconds (JVM running for 4.678)
+19:17:13.621 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:17:13.622 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+19:17:13.633 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 11 ms
+19:17:13.696 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+19:17:13.733 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+19:17:13.733 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+19:17:13.739 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+19:17:14.008 INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+19:17:14.012 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+19:17:22.919 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+19:17:22.922 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+19:19:31.636 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+19:19:31.637 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+19:19:31.638 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+19:19:38.052 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+19:19:38.053 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+19:21:42.507 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+19:21:42.508 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+19:21:53.575 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+19:21:53.576 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+19:21:53.576 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+19:21:56.051 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+19:21:56.053 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+19:26:23.107 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+19:26:23.110 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+19:26:23.110 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+19:26:24.982 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+19:26:24.984 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+19:26:47.617 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+19:26:47.619 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+19:26:47.620 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+19:26:49.237 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+19:26:49.239 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+19:27:01.701 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+19:27:01.702 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+19:27:01.702 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+19:27:03.804 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+19:27:03.805 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+19:29:18.684 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+19:29:18.686 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+19:29:18.686 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+19:29:20.270 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+19:29:20.272 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+19:30:56.464 INFO  x.myblog.controller.BaseController - {"operation":"deleteFile"}
+19:30:56.466 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"deleteFile"}
+19:31:09.879 INFO  x.myblog.controller.BaseController - {"operation":"deleteFile"}
+19:31:09.881 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"deleteFile"}
+19:32:00.341 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+19:32:00.342 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+19:32:00.343 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+19:32:01.584 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+19:32:01.585 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+19:33:16.197 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+19:33:16.199 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+19:33:16.199 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+19:33:23.921 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+19:33:23.922 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+19:34:26.255 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+19:34:26.256 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+19:34:26.257 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+19:34:28.134 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+19:34:28.135 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+19:34:32.376 INFO  x.myblog.controller.BaseController - {"operation":"deleteFile"}
+19:34:32.377 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"deleteFile"}
+19:35:22.009 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+19:35:22.011 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+19:35:22.011 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+19:35:23.431 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+19:35:23.432 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+19:35:29.138 INFO  x.myblog.controller.BaseController - {"operation":"deleteFile","id":57}
+19:35:29.139 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"deleteFile","id":57}
+19:35:52.515 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+19:35:52.517 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+19:35:52.517 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+19:35:53.944 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+19:35:53.945 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+19:42:52.981 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+19:42:52.982 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+19:43:02.608 INFO  x.myblog.controller.BaseController - {"operation":"deleteFile","filename":"微信图片_20200302105308.jpg","id":57}
+19:43:02.609 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"deleteFile","filename":"微信图片_20200302105308.jpg","id":57}
+19:43:05.309 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+19:43:05.309 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+19:43:20.719 INFO  x.myblog.controller.BaseController - {"operation":"deleteFile","filename":"微信图片.jpg","id":57}
+19:43:20.720 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"deleteFile","filename":"微信图片.jpg","id":57}
+19:45:18.485 INFO  xuecl.myblog.MyblogApplication - Starting MyblogApplication on DESKTOP-O9S7IM3 with PID 10004 (D:\Software\java-2019-062\workspace\myblog\target\classes started by xuecl in D:\Software\java-2019-062\workspace\myblog)
+19:45:18.493 INFO  xuecl.myblog.MyblogApplication - No active profile set, falling back to default profiles: default
+19:45:20.730 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+19:45:20.744 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+19:45:20.745 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+19:45:20.746 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+19:45:20.880 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+19:45:20.880 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2242 ms
+19:45:21.308 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+19:45:21.438 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+19:45:21.624 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+19:45:21.663 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+19:45:21.667 INFO  xuecl.myblog.MyblogApplication - Started MyblogApplication in 3.964 seconds (JVM running for 4.516)
+19:45:59.469 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:45:59.469 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+19:45:59.484 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+19:45:59.547 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+19:45:59.586 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+19:45:59.593 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+19:45:59.884 INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+19:45:59.888 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+19:47:10.260 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+19:47:10.264 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+19:47:17.148 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+19:47:17.149 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+19:47:17.149 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+19:47:18.133 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+19:47:18.134 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+19:47:21.156 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+19:47:21.158 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+19:47:56.779 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+19:47:56.781 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+19:47:56.781 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+19:47:59.907 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+19:47:59.908 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+19:48:05.723 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+19:48:05.724 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+19:48:52.277 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+19:48:52.278 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+19:49:05.697 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+19:49:05.699 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+19:49:05.699 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+19:49:07.390 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+19:49:07.391 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+19:49:11.320 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+19:49:11.321 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+19:50:33.239 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+19:50:33.241 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+19:50:33.241 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+19:50:34.242 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+19:50:34.243 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+19:50:45.223 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+19:50:45.224 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+19:50:56.827 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+19:50:56.830 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+19:50:56.831 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+19:51:01.046 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+19:51:01.047 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+19:51:04.374 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+19:51:04.375 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+19:57:24.533 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+19:57:24.535 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+19:57:39.300 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+19:57:39.301 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+19:57:39.302 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+19:57:40.801 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+19:57:40.802 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+19:57:55.076 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+19:57:55.077 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+19:58:49.905 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+19:58:49.906 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+19:59:11.992 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+19:59:11.993 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+19:59:11.994 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+19:59:13.164 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+19:59:13.165 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+19:59:19.024 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+19:59:19.025 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+20:00:17.863 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+20:00:17.865 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+20:00:17.865 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+20:00:22.817 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+20:00:22.818 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+20:01:19.794 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+20:01:19.796 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+20:01:19.796 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+20:01:21.112 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+20:01:21.113 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+20:03:55.671 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+20:03:55.672 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+20:03:55.672 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+20:03:58.974 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+20:03:58.975 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+20:05:30.157 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+20:05:30.158 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+20:05:30.158 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+20:05:31.048 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+20:05:31.048 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+20:05:37.782 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+20:05:37.783 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+20:06:33.490 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+20:06:33.491 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+20:06:33.491 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+20:06:34.488 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+20:06:34.490 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+20:07:33.945 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+20:07:33.946 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+20:07:33.946 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+20:07:37.290 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+20:07:37.291 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+20:08:32.505 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+20:08:32.506 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+20:08:32.506 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+20:08:35.764 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+20:08:35.765 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+20:09:27.515 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+20:09:27.516 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+20:09:27.517 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+20:09:28.776 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+20:09:28.777 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+20:11:52.743 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+20:11:52.744 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+20:11:52.744 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+20:11:57.214 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+20:11:57.215 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+20:16:03.204 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+20:16:03.205 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+20:16:03.205 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+20:16:06.790 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+20:16:06.794 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+20:22:56.586 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+20:22:56.588 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+20:22:56.588 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+20:22:58.476 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+20:22:58.477 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+20:25:21.081 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+20:25:21.082 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+20:25:21.082 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+20:25:22.331 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+20:25:22.332 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+20:25:46.788 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+20:25:46.789 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+20:25:46.789 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+20:25:50.567 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+20:25:50.569 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+20:26:20.803 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+20:26:20.804 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+20:26:20.804 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+20:26:24.304 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+20:26:24.305 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+20:26:46.291 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+20:26:46.292 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+20:26:46.292 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+20:26:50.099 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+20:26:50.100 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+20:28:44.017 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+20:28:44.018 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+20:28:44.018 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+20:28:45.021 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+20:28:45.022 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+20:29:44.217 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+20:29:44.218 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+20:29:58.400 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+20:29:58.401 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+20:31:15.620 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+20:31:15.621 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+20:32:00.279 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+20:32:00.282 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+20:32:00.282 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+20:32:01.968 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+20:32:01.969 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+20:32:05.262 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+20:32:05.263 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+20:32:09.399 INFO  x.myblog.controller.BaseController - {"operation":"deleteFile","filename":"微信图片.jpg","id":57}
+20:32:09.399 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"deleteFile","filename":"微信图片.jpg","id":57}
+20:33:07.422 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+20:33:07.423 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+20:33:21.916 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+20:33:21.917 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+20:34:05.206 INFO  xuecl.myblog.MyblogApplication - Starting MyblogApplication on DESKTOP-O9S7IM3 with PID 17624 (D:\Software\java-2019-062\workspace\myblog\target\classes started by xuecl in D:\Software\java-2019-062\workspace\myblog)
+20:34:05.211 INFO  xuecl.myblog.MyblogApplication - No active profile set, falling back to default profiles: default
+20:34:07.845 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+20:34:07.863 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+20:34:07.864 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:34:07.865 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+20:34:07.998 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:34:07.999 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2693 ms
+20:34:08.453 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+20:34:08.616 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+20:34:08.844 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+20:34:08.900 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+20:34:08.905 INFO  xuecl.myblog.MyblogApplication - Started MyblogApplication in 4.518 seconds (JVM running for 5.321)
+20:34:22.379 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+20:34:22.380 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+20:34:22.396 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 16 ms
+20:34:22.523 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+20:34:22.605 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+20:34:22.605 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+20:34:22.615 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+20:34:22.952 INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+20:34:22.957 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+20:34:24.382 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+20:34:24.384 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+20:34:29.709 INFO  x.myblog.controller.BaseController - {"operation":"deleteFile","filename":"微信图片_20200302105308.jpg","id":57}
+20:34:29.711 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"deleteFile","filename":"微信图片_20200302105308.jpg","id":57}
+20:35:10.399 INFO  x.myblog.controller.BaseController - {"operation":"deleteFile","filename":"微信图片.jpg","id":57}
+20:35:10.400 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"deleteFile","filename":"微信图片.jpg","id":57}
+20:37:04.225 INFO  xuecl.myblog.MyblogApplication - Starting MyblogApplication on DESKTOP-O9S7IM3 with PID 22800 (D:\Software\java-2019-062\workspace\myblog\target\classes started by xuecl in D:\Software\java-2019-062\workspace\myblog)
+20:37:04.230 INFO  xuecl.myblog.MyblogApplication - No active profile set, falling back to default profiles: default
+20:37:06.635 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+20:37:06.648 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+20:37:06.649 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:37:06.649 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+20:37:06.787 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:37:06.787 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2450 ms
+20:37:07.223 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+20:37:07.353 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+20:37:07.530 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+20:37:07.574 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+20:37:07.578 INFO  xuecl.myblog.MyblogApplication - Started MyblogApplication in 4.182 seconds (JVM running for 4.987)
+20:37:24.684 INFO  xuecl.myblog.MyblogApplication - Starting MyblogApplication on DESKTOP-O9S7IM3 with PID 21912 (D:\Software\java-2019-062\workspace\myblog\target\classes started by xuecl in D:\Software\java-2019-062\workspace\myblog)
+20:37:24.691 INFO  xuecl.myblog.MyblogApplication - No active profile set, falling back to default profiles: default
+20:37:27.181 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+20:37:27.194 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+20:37:27.194 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:37:27.195 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+20:37:27.326 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:37:27.326 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2531 ms
+20:37:27.738 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+20:37:27.885 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+20:37:28.083 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+20:37:28.126 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+20:37:28.130 INFO  xuecl.myblog.MyblogApplication - Started MyblogApplication in 4.225 seconds (JVM running for 4.835)
+20:37:54.527 INFO  xuecl.myblog.MyblogApplication - Starting MyblogApplication on DESKTOP-O9S7IM3 with PID 14224 (D:\Software\java-2019-062\workspace\myblog\target\classes started by xuecl in D:\Software\java-2019-062\workspace\myblog)
+20:37:54.533 INFO  xuecl.myblog.MyblogApplication - No active profile set, falling back to default profiles: default
+20:37:56.720 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+20:37:56.736 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+20:37:56.737 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:37:56.737 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+20:37:56.883 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:37:56.883 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2254 ms
+20:37:57.338 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+20:37:57.466 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+20:37:57.892 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+20:37:57.991 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+20:37:57.998 INFO  xuecl.myblog.MyblogApplication - Started MyblogApplication in 4.293 seconds (JVM running for 4.954)
+20:43:38.919 INFO  xuecl.myblog.MyblogApplication - Starting MyblogApplication on DESKTOP-O9S7IM3 with PID 17200 (D:\Software\java-2019-062\workspace\myblog\target\classes started by xuecl in D:\Software\java-2019-062\workspace\myblog)
+20:43:38.931 INFO  xuecl.myblog.MyblogApplication - No active profile set, falling back to default profiles: default
+20:43:41.428 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+20:43:41.444 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+20:43:41.445 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:43:41.445 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+20:43:41.610 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:43:41.611 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2567 ms
+20:43:42.099 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+20:43:42.226 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+20:43:42.421 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+20:43:42.470 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+20:43:42.477 INFO  xuecl.myblog.MyblogApplication - Started MyblogApplication in 4.399 seconds (JVM running for 5.003)
+20:44:07.369 INFO  xuecl.myblog.MyblogApplication - Starting MyblogApplication on DESKTOP-O9S7IM3 with PID 24376 (D:\Software\java-2019-062\workspace\myblog\target\classes started by xuecl in D:\Software\java-2019-062\workspace\myblog)
+20:44:07.374 INFO  xuecl.myblog.MyblogApplication - No active profile set, falling back to default profiles: default
+20:44:09.532 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+20:44:09.548 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+20:44:09.549 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:44:09.549 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+20:44:09.704 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:44:09.704 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2241 ms
+20:44:10.193 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+20:44:10.324 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+20:44:10.523 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+20:44:10.573 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+20:44:10.577 INFO  xuecl.myblog.MyblogApplication - Started MyblogApplication in 3.995 seconds (JVM running for 4.638)
+20:45:01.727 DEBUG o.h.v.m.ResourceBundleMessageInterpolator - Loaded expression factory via original TCCL
+20:45:01.934 INFO  xuecl.myblog.MyblogApplication - Starting MyblogApplication on DESKTOP-O9S7IM3 with PID 24512 (D:\Software\java-2019-062\workspace\myblog\target\classes started by xuecl in D:\Software\java-2019-062\workspace\myblog)
+20:45:01.936 INFO  xuecl.myblog.MyblogApplication - No active profile set, falling back to default profiles: default
+20:45:04.516 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+20:45:04.533 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+20:45:04.533 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:45:04.534 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+20:45:04.668 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:45:04.669 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2623 ms
+20:45:05.123 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+20:45:05.454 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+20:45:05.498 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+20:45:05.502 INFO  xuecl.myblog.MyblogApplication - Started MyblogApplication in 4.337 seconds (JVM running for 4.925)
+20:46:49.908 INFO  xuecl.myblog.MyblogApplication - Starting MyblogApplication on DESKTOP-O9S7IM3 with PID 16760 (D:\Software\java-2019-062\workspace\myblog\target\classes started by xuecl in D:\Software\java-2019-062\workspace\myblog)
+20:46:49.913 INFO  xuecl.myblog.MyblogApplication - No active profile set, falling back to default profiles: default
+20:46:52.148 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+20:46:52.161 INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+20:46:52.162 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+20:46:52.163 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.33]
+20:46:52.338 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+20:46:52.339 INFO  o.s.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2335 ms
+20:46:52.782 INFO  o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+20:46:52.932 INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+20:46:53.122 INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+20:46:53.169 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+20:46:53.176 INFO  xuecl.myblog.MyblogApplication - Started MyblogApplication in 4.294 seconds (JVM running for 5.122)
+20:46:59.351 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+20:46:59.351 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+20:46:59.366 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 15 ms
+20:46:59.422 INFO  x.myblog.controller.BaseController - {"operation":"deleteFile","filename":"微信图片_20200302105308.jpg","id":57}
+20:46:59.461 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"deleteFile","filename":"微信图片_20200302105308.jpg","id":57}
+20:46:59.462 WARN  x.myblog.controller.BaseController - 文件不存在D:\Software\java-2019-062\workspace\myblog\src\main\resources\static\img\57\微信图片_20200302105308.jpg;D:\Software\java-2019-062\workspace\myblog\target\classes\static\img\57\微信图片_20200302105308.jpg
+20:49:05.154 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+20:49:05.155 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+20:49:05.156 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+20:49:05.161 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+20:49:05.472 INFO  com.zaxxer.hikari.pool.PoolBase - HikariPool-1 - Driver does not support get/set network timeout for connections. (com.mysql.jdbc.JDBC4Connection.getNetworkTimeout()I)
+20:49:05.476 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+20:49:06.930 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+20:49:06.934 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+20:49:25.233 INFO  x.myblog.controller.BaseController - {"operation":"deleteFile","filename":"123.jpg","id":57}
+20:49:25.234 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"deleteFile","filename":"123.jpg","id":57}
+20:49:28.655 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+20:49:28.657 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+20:50:07.594 INFO  x.myblog.controller.BaseController - {"operation":"deleteFile","filename":"tes11t.jpg","id":57}
+20:50:07.595 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"deleteFile","filename":"tes11t.jpg","id":57}
+20:50:08.875 INFO  x.myblog.controller.BaseController - {"operation":"deleteFile","filename":"food.jpg","id":57}
+20:50:08.878 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"deleteFile","filename":"food.jpg","id":57}
+20:50:13.520 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":57}
+20:50:13.521 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":57}
+20:51:42.449 INFO  x.myblog.controller.BaseController - {"operation":"deleteFile","filename":"你好.jpg","id":57}
+20:51:42.452 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"deleteFile","filename":"你好.jpg","id":57}
+20:51:43.695 INFO  x.myblog.controller.BaseController - {"operation":"deleteFile","filename":"testPic.jpg","id":57}
+20:51:43.696 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"deleteFile","filename":"testPic.jpg","id":57}
+20:51:44.727 INFO  x.myblog.controller.BaseController - {"operation":"deleteFile","filename":"test2.jpg","id":57}
+20:51:44.729 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"deleteFile","filename":"test2.jpg","id":57}
+20:51:45.542 INFO  x.myblog.controller.BaseController - {"operation":"deleteFile","filename":"b476cc7c05a69bbc3daa48e04fb2dc8.jpg","id":57}
+20:51:45.543 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"deleteFile","filename":"b476cc7c05a69bbc3daa48e04fb2dc8.jpg","id":57}
+20:51:46.159 INFO  x.myblog.controller.BaseController - {"operation":"deleteFile","filename":"201861317455726418.jpg","id":57}
+20:51:46.160 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"deleteFile","filename":"201861317455726418.jpg","id":57}
+20:51:46.775 INFO  x.myblog.controller.BaseController - {"operation":"deleteFile","filename":"1238.jpg","id":57}
+20:51:46.776 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"deleteFile","filename":"1238.jpg","id":57}
+20:51:47.407 INFO  x.myblog.controller.BaseController - {"operation":"deleteFile","filename":"111.jpg","id":57}
+20:51:47.408 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"deleteFile","filename":"111.jpg","id":57}
+20:52:15.886 INFO  x.myblog.controller.BaseController - {"operation":"deleteFile","filename":"psd4785.jpg","id":57}
+20:52:15.887 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"deleteFile","filename":"psd4785.jpg","id":57}
+20:55:53.445 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+20:55:53.447 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+20:55:53.448 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+20:56:26.522 INFO  x.myblog.controller.BaseController - {"title":"优先度事项","digest":"项目的有限度列表","user":"xuecl","operation":"save"}
+20:56:26.523 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"优先度事项","digest":"项目的有限度列表","user":"xuecl","operation":"save"}
+20:56:26.925 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":60}
+20:56:26.926 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":60}
+21:01:01.239 INFO  x.myblog.controller.BaseController - {"id":60,"title":"优先度事项","keyWord":null,"content":"* git，这个最优先，毕竟没有版本控制没法更新\n* 标题唯一的逻辑要改，不能直接在表中设unique，因为删除数据并不是真正的将数据删除\n* 劫持\"ctrl s\"的保存事件\n* store的用法，用户名最好用store保存\n* 新增/修改时若缺少字段，应在代码阶段就报错，不要到了sql执行再报错\n* 分类逻辑重新考虑下，要不要加入action-list，随想等。。\n* 检索除全部改成模糊查询，检索时可以用日期区间作为检索条件，在此基础上检索逻辑重新考虑下\n* 上传图片后自动点击按钮自动复制链接到剪切板\n\t自己的一个实现思路，自己dispatch 一个copy事件看可不可以\n*  图片的保存路径应该得优化下，如果将项目打成jar包运行得话，现在得路径应该会有问题\n* 增加分页\n* 批量的删除\n* 通讯时增加遮罩\n* 增加登陆界面，后端增加用户管理\n* 界面美化，熟悉下el的用法，考虑响应式布局","digest":"项目的有限度列表","user":"xuecl","operation":"save"}
+21:01:01.241 INFO  x.myblog.controller.BaseController - 输入参数 {"id":60,"title":"优先度事项","keyWord":null,"content":"* git，这个最优先，毕竟没有版本控制没法更新\n* 标题唯一的逻辑要改，不能直接在表中设unique，因为删除数据并不是真正的将数据删除\n* 劫持\"ctrl s\"的保存事件\n* store的用法，用户名最好用store保存\n* 新增/修改时若缺少字段，应在代码阶段就报错，不要到了sql执行再报错\n* 分类逻辑重新考虑下，要不要加入action-list，随想等。。\n* 检索除全部改成模糊查询，检索时可以用日期区间作为检索条件，在此基础上检索逻辑重新考虑下\n* 上传图片后自动点击按钮自动复制链接到剪切板\n\t自己的一个实现思路，自己dispatch 一个copy事件看可不可以\n*  图片的保存路径应该得优化下，如果将项目打成jar包运行得话，现在得路径应该会有问题\n* 增加分页\n* 批量的删除\n* 通讯时增加遮罩\n* 增加登陆界面，后端增加用户管理\n* 界面美化，熟悉下el的用法，考虑响应式布局","digest":"项目的有限度列表","user":"xuecl","operation":"save"}
+21:02:43.376 INFO  x.myblog.controller.BaseController - {"id":60,"title":"优先度事项","keyWord":null,"content":"* git，这个最优先，毕竟没有版本控制没法更新\n* 标题唯一的逻辑要改，不能直接在表中设unique，因为删除数据并不是真正的将数据删除\n* 劫持\"ctrl s\"的保存事件\n* 新增/修改时若缺少字段，应在代码阶段就报错，不要到了sql执行再报错\n*  \n* 分类逻辑重新考虑下，要不要加入action-list，随想等。。\n* 检索除全部改成模糊查询，检索时可以用日期区间作为检索条件，在此基础上检索逻辑重新考虑下\n* 上传图片后自动点击按钮自动复制链接到剪切板\n\t自己的一个实现思路，自己dispatch 一个copy事件看可不可以\n*  store的用法，用户名最好用store保存\n*  图片的保存路径应该得优化下，如果将项目打成jar包运行得话，现在得路径应该会有问题\n* 增加分页\n* 批量的删除\n* 通讯时增加遮罩\n* 增加登陆界面，后端增加用户管理\n* 界面美化，熟悉下el的用法，考虑响应式布局","digest":"项目的有限度列表","user":"xuecl","operation":"save"}
+21:02:43.378 INFO  x.myblog.controller.BaseController - 输入参数 {"id":60,"title":"优先度事项","keyWord":null,"content":"* git，这个最优先，毕竟没有版本控制没法更新\n* 标题唯一的逻辑要改，不能直接在表中设unique，因为删除数据并不是真正的将数据删除\n* 劫持\"ctrl s\"的保存事件\n* 新增/修改时若缺少字段，应在代码阶段就报错，不要到了sql执行再报错\n*  \n* 分类逻辑重新考虑下，要不要加入action-list，随想等。。\n* 检索除全部改成模糊查询，检索时可以用日期区间作为检索条件，在此基础上检索逻辑重新考虑下\n* 上传图片后自动点击按钮自动复制链接到剪切板\n\t自己的一个实现思路，自己dispatch 一个copy事件看可不可以\n*  store的用法，用户名最好用store保存\n*  图片的保存路径应该得优化下，如果将项目打成jar包运行得话，现在得路径应该会有问题\n* 增加分页\n* 批量的删除\n* 通讯时增加遮罩\n* 增加登陆界面，后端增加用户管理\n* 界面美化，熟悉下el的用法，考虑响应式布局","digest":"项目的有限度列表","user":"xuecl","operation":"save"}
+21:03:38.660 INFO  x.myblog.controller.BaseController - {"id":60,"title":"优先度事项","keyWord":null,"content":"* git，这个最优先，毕竟没有版本控制没法更新\n* 标题唯一的逻辑要改，不能直接在表中设unique，因为删除数据并不是真正的将数据删除\n* 劫持\"ctrl s\"的保存事件\n* 查看界面不要放上编辑框\n* 新增/修改时若缺少字段，应在代码阶段就报错，不要到了sql执行再报错\n*  \n* 分类逻辑重新考虑下，要不要加入action-list，随想等。。\n* 检索除全部改成模糊查询，检索时可以用日期区间作为检索条件，在此基础上检索逻辑重新考虑下\n* 上传图片后自动点击按钮自动复制链接到剪切板\n\t自己的一个实现思路，自己dispatch 一个copy事件看可不可以\n*  store的用法，用户名最好用store保存\n*  图片的保存路径应该得优化下，如果将项目打成jar包运行得话，现在得路径应该会有问题\n* 增加分页\n* 批量的删除\n* 通讯时增加遮罩\n* 增加登陆界面，后端增加用户管理\n* 界面美化，熟悉下el的用法，考虑响应式布局","digest":"项目的有限度列表","user":"xuecl","operation":"save"}
+21:03:38.661 INFO  x.myblog.controller.BaseController - 输入参数 {"id":60,"title":"优先度事项","keyWord":null,"content":"* git，这个最优先，毕竟没有版本控制没法更新\n* 标题唯一的逻辑要改，不能直接在表中设unique，因为删除数据并不是真正的将数据删除\n* 劫持\"ctrl s\"的保存事件\n* 查看界面不要放上编辑框\n* 新增/修改时若缺少字段，应在代码阶段就报错，不要到了sql执行再报错\n*  \n* 分类逻辑重新考虑下，要不要加入action-list，随想等。。\n* 检索除全部改成模糊查询，检索时可以用日期区间作为检索条件，在此基础上检索逻辑重新考虑下\n* 上传图片后自动点击按钮自动复制链接到剪切板\n\t自己的一个实现思路，自己dispatch 一个copy事件看可不可以\n*  store的用法，用户名最好用store保存\n*  图片的保存路径应该得优化下，如果将项目打成jar包运行得话，现在得路径应该会有问题\n* 增加分页\n* 批量的删除\n* 通讯时增加遮罩\n* 增加登陆界面，后端增加用户管理\n* 界面美化，熟悉下el的用法，考虑响应式布局","digest":"项目的有限度列表","user":"xuecl","operation":"save"}
+21:03:44.463 INFO  x.myblog.controller.BaseController - {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+21:03:44.464 INFO  x.myblog.controller.BaseController - 输入参数 {"title":"","keyWord":"","modifyDate":"","operation":"query"}
+21:03:44.464 INFO  x.myblog.controller.BaseController - queryConditionSql:  1 = 1 
+21:03:53.257 INFO  x.myblog.controller.BaseController - {"operation":"queryById","id":60}
+21:03:53.258 INFO  x.myblog.controller.BaseController - 输入参数 {"operation":"queryById","id":60}
