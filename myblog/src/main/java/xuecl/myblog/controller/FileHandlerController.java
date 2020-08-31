@@ -7,7 +7,9 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -19,6 +21,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import org.slf4j.Logger;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Controller;
@@ -31,13 +34,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import xuecl.myblog.entity.RspBody;
+import xuecl.myblog.util.ExceptionHandler;
 
 @Controller
 @RequestMapping("/file")
-@PropertySource(value = { "config/fileTransferConfig.properties" })
-public class FileHandlerController extends BaseController {
-    private static String imgRoot;
+// 不加classpath可以run 但是过不了mvn test 我也不懂为什么，先不管
+@PropertySource(value = {"classpath:config/fileTransferConfig.properties" })
+public class FileHandlerController {
+    private static String imgRoot; 
+    private static String sqlFileRoot;  
     private static String imgBaseHttpUrl = "file/download";
+    private static Logger logger = ExceptionHandler.logger;
 
     @ResponseBody
     @RequestMapping(path = { "imgUpload/{id}" }, method = RequestMethod.POST)
@@ -58,7 +65,7 @@ public class FileHandlerController extends BaseController {
             resultMap.put("url", imgBaseHttpUrl + "?id=" + id + "&filename=" + URLEncoder.encode(filename, "utf8"));
             return RspBody.succesRspCreate(resultMap);
         } catch (Exception e) {
-            return exceptionHandler(e);
+            return ExceptionHandler.exceptionHandler(e);
         }
     }
 
@@ -101,6 +108,7 @@ public class FileHandlerController extends BaseController {
         if (!imgFile.exists()) {
             logger.warn("文件不存在" + imgFile.getAbsolutePath());
         }
+        response.setHeader("Cache-Control", "no-cache,no-store");
         try (BufferedOutputStream os = new BufferedOutputStream(response.getOutputStream());
                 BufferedInputStream is = new BufferedInputStream(new FileInputStream(imgFile))) {
             int data = 0;
@@ -109,7 +117,29 @@ public class FileHandlerController extends BaseController {
             }
             os.flush();
         } catch (Exception e) {
-            exceptionHandler(e);
+            ExceptionHandler.exceptionHandler(e);
+        }
+    }
+
+    @RequestMapping("downloadSqlFile/{date}")
+    public void downloadSqlFile(@PathVariable("date") String date,
+            HttpServletResponse response) throws Exception {
+        File sqlFileDir = new File(sqlFileRoot);
+        File sqlFile = new File(sqlFileDir.getAbsoluteFile() + "/" + "bakup_" + new SimpleDateFormat("yyyy-MM-dd").format(new Date()) + ".sql");
+        if (!sqlFile.exists()) {
+            logger.warn("文件不存在" + sqlFile.getAbsolutePath());
+        }
+        // 好像必须先设置响应头在获取outputstream
+        response.setHeader("content-disposition", "attachment; filename=\"backup_" + date + ".sql\"");
+        try (BufferedOutputStream os = new BufferedOutputStream(response.getOutputStream());
+                BufferedInputStream is = new BufferedInputStream(new FileInputStream(sqlFile))) {
+            int data = 0;
+            while ((data = is.read()) != -1) {
+                os.write(data);
+            }
+            os.flush();
+        } catch (Exception e) {
+            ExceptionHandler.exceptionHandler(e);
         }
     }
 
@@ -124,7 +154,7 @@ public class FileHandlerController extends BaseController {
             try {
                 list.add(baseUrl + "&filename=" + URLEncoder.encode(imgName, "utf8"));
             } catch (UnsupportedEncodingException e) {
-                exceptionHandler(e);
+                ExceptionHandler.exceptionHandler(e);
             }
         }
         return list;
@@ -133,5 +163,9 @@ public class FileHandlerController extends BaseController {
     @Value("${imgRootDir}")
     public void setImgRoot(String imgRoot) {
         FileHandlerController.imgRoot = imgRoot; 
+    }
+    @Value("${sqlFileRoot}")
+    public void setSqlFileRoot(String sqlFileRoot) {
+        FileHandlerController.sqlFileRoot = sqlFileRoot; 
     }
 }

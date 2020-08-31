@@ -10,7 +10,7 @@ import xuecl.myblog.entity.RspBody;
 public class BaseController {
 	@Autowired
 	protected JdbcTemplate jdbcTemplate;
-	protected static final Logger logger = LoggerFactory.getLogger(BaseController.class);
+	public static final Logger logger = LoggerFactory.getLogger(BaseController.class);
 
     // 打印异常信息的堆栈
  	protected static String getStackTraceString(Throwable ex){//(Exception ex) {   
