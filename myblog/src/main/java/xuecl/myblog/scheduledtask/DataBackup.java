@@ -36,6 +36,7 @@ public class DataBackup {
         String sqlString = insertSqlStringCreate();
         String filename = "bakup_" + new SimpleDateFormat("yyyy-MM-dd").format(new Date()) + ".sql";
         File sqlFile = new File(sqlFileRoot + filename);
+        sqlFile.getParentFile().mkdirs();
         PrintWriter pw = null;
         try {
             pw = new PrintWriter(sqlFile, "utf8");
