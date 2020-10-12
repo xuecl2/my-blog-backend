@@ -62,7 +62,16 @@ public class DataBackup {
             StringBuffer str2 = new StringBuffer("values(");
             for(Entry<String, Object> entry: map.entrySet()) {
                 str1.append(entry.getKey() + ",");
-                str2.append("'" + entry.getValue() + "'," );
+                Object value = entry.getValue();
+                if(value != null && "String".equals(value.getClass().getSimpleName())) {
+                    str2.append("'" + value.toString().replace("'", "''") + "'");
+                }else {
+                    // if(value != null) {
+                    //     System.out.println(value.getClass().getName());
+                    // }
+                    str2.append(value);
+                }
+                str2.append(",");
             }
             str1.deleteCharAt(str1.length() - 1).append(") ");
             str2.deleteCharAt(str2.length() - 1).append(");\n");
