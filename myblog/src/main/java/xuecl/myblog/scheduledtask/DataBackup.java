@@ -22,9 +22,9 @@ import org.slf4j.Logger;
 
 import xuecl.myblog.entity.RspBody;
 
-@Configuration // 1.主要用于标记配置类，兼备Component的效果。
-@EnableScheduling   // 2.开启定时任务
-@PropertySource(value = {"classpath:config/fileTransferConfig.properties" })
+// @Configuration // 1.主要用于标记配置类，兼备Component的效果。
+// @EnableScheduling   // 2.开启定时任务
+// @PropertySource(value = {"classpath:config/fileTransferConfig.properties" })
 public class DataBackup {
     private static String sqlFileRoot;
     @Autowired
