@@ -3,10 +3,11 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**
 !**/src/test/**
-/logs/
-/sqls/
-/imgs/
-/bakup/
+logs/
+sqls/
+imgs/
+backup/
+nohup.out
 
 ### STS ###
 .apt_generated
