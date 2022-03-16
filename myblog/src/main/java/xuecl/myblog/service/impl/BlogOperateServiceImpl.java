@@ -1,6 +1,7 @@
 package xuecl.myblog.service.impl;
 
 import java.sql.PreparedStatement;
+import java.sql.Statement;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -191,7 +192,7 @@ public class BlogOperateServiceImpl implements IBlogOperateService {
     	KeyHolder keyHolder = new GeneratedKeyHolder();
     	jdbcTemplate.update(connection -> {
             PreparedStatement ps = connection
-                    .prepareStatement(insertSql);
+                    .prepareStatement(insertSql, Statement.RETURN_GENERATED_KEYS);
                     ps.setString(1, title);
                     ps.setString(2, keyWord);
                     ps.setString(3, content);
@@ -203,7 +204,7 @@ public class BlogOperateServiceImpl implements IBlogOperateService {
                     ps.setString(9, digest);
                     return ps;
     	}, keyHolder);
-    	return (long) keyHolder.getKey();
+    	return keyHolder.getKey().longValue();
     }
     
     private void update(Long id, String title, String keyWord, String content, String user, String digest) {
