@@ -7,6 +7,7 @@ target/
 /sqls/
 /imgs/
 /bakup/
+nohup.out
 /src/main/resources/application.properties
 
 ### STS ###
