@@ -92,7 +92,7 @@ public class BlogOperateServiceImpl implements IBlogOperateService {
         logger.info("queryConditionSql: " + queryConditionSql);
         return jdbcTemplate.queryForList("select idblog as id, blogTitle, blogKeyWord, "
                 + "createDate, createUser, modifyDate, modifyUser, isDel, blogDigest"
-                + " from blog where " + queryConditionSql + " and isDel = '0' limit " + pageNo + "," + rowsPerPage) ;
+                + " from blog where " + queryConditionSql + " and isDel = '0' limit " + pageNo * rowsPerPage + "," + rowsPerPage) ;
     }
 
     private List<Map<String, Object>> query(Map<String,String> queryParams){
