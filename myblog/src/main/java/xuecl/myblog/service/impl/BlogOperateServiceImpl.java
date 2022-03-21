@@ -1,6 +1,5 @@
 package xuecl.myblog.service.impl;
 
-import java.math.BigInteger;
 import java.sql.PreparedStatement;
 import java.sql.Statement;
 import java.text.DateFormat;
@@ -84,8 +83,8 @@ public class BlogOperateServiceImpl implements IBlogOperateService {
     }
 
     private long getTotalRows() {
-        String sql = "select count(*) from blog";
-        return ((BigInteger)jdbcTemplate.queryForList(sql).get(0)).longValue();
+        String sql = "select count(*) as count from blog where isDel = '0'";
+        return ((Long)jdbcTemplate.queryForList(sql).get(0).get("count")).longValue();
     }
 
     private List<Map<String, Object>> query(Map<String,String> queryParams, long pageNo, long rowsPerPage) {
