@@ -64,7 +64,7 @@ public class BlogOperateServiceImpl implements IBlogOperateService {
                 long rowsPerPage = Long.parseLong(map.get("rowsPerPage").toString());
                 List<Map<String,Object>> resultList = query(queryParams, pageNo, rowsPerPage);
 //				if(resultList.size() == 0) return RspBody.failureRspCreate("无满足条件的记录");
-                return RspBody.succesRspCreate("resultList", resultList, "totalRows", getTotalRows());
+                return RspBody.succesRspCreate("resultList", resultList, "totalRows", getTotalRows(queryParams));
             }
             case "queryById": {
                 Long id = map.get("id") != null && !"".equals(map.get("id"))?((Integer)map.get("id")).longValue():null;
@@ -82,8 +82,9 @@ public class BlogOperateServiceImpl implements IBlogOperateService {
         return null;
     }
 
-    private long getTotalRows() {
-        String sql = "select count(*) as count from blog where isDel = '0'";
+    private long getTotalRows(Map<String,String> queryParams) {
+        String queryConditionSql = createQueryConditionSql(queryParams);
+        String sql = "select count(*) as count from blog where " + queryConditionSql + " and isDel = '0'";
         return ((Long)jdbcTemplate.queryForList(sql).get(0).get("count")).longValue();
     }
 
@@ -160,26 +161,26 @@ public class BlogOperateServiceImpl implements IBlogOperateService {
         String[][] matrix = new String[permutation(keyWordList.size())][keyWordList.size()];
         matrix(keyWordList, 0, matrix);
         for(int i = 0; i<matrix.length; i++) {
-            sql.append("blogTitle like ");
+            sql.append("blogTitle like '");
             for(int j = 0; j<matrix[0].length; j++) {
-                sql.append("'%" + matrix[i][j] + "%'");
+                sql.append("%" + matrix[i][j] + "%");
             }
-            sql.append(" or ");
-            sql.append("blogKeyWord like ");
+            sql.append("' or ");
+            sql.append("blogKeyWord like '");
             for(int j = 0; j<matrix[0].length; j++) {
-                sql.append("'%" + matrix[i][j] + "%'");
+                sql.append("%" + matrix[i][j] + "%");
             }
-            sql.append(" or ");
-            sql.append("blogDigest like ");
+            sql.append("' or ");
+            sql.append("blogDigest like '");
             for(int j = 0; j<matrix[0].length; j++) {
-                sql.append("'%" + matrix[i][j] + "%'");
+                sql.append("%" + matrix[i][j] + "%");
             }
-            sql.append(" or ");
-            sql.append("blogContent like ");
+            sql.append("' or ");
+            sql.append("blogContent like '");
             for(int j = 0; j<matrix[0].length; j++) {
-                sql.append("'%" + matrix[i][j] + "%'");
+                sql.append("%" + matrix[i][j] + "%");
             }
-            sql.append(" or ");
+            sql.append("' or ");
         }
         System.out.println("KeyWordConditionSql: " + sql);
         return sql.substring(0, sql.length() - 3) + ")";
