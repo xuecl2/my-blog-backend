@@ -108,7 +108,8 @@ public class FileHandlerController {
         if (!imgFile.exists()) {
             logger.warn("文件不存在" + imgFile.getAbsolutePath());
         }
-        response.setHeader("Cache-Control", "no-cache,no-store");
+        // response.setHeader("Cache-Control", "no-cache,no-store");
+        response.setHeader("Cache-Control", "max-age=31536000");
         try (BufferedOutputStream os = new BufferedOutputStream(response.getOutputStream());
                 BufferedInputStream is = new BufferedInputStream(new FileInputStream(imgFile))) {
             int data = 0;

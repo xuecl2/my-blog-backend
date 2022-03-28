@@ -6,7 +6,7 @@ target/
 /logs/
 /sqls/
 /imgs/
-/bakup/
+/backup/
 nohup.out
 /src/main/resources/application.properties
 
